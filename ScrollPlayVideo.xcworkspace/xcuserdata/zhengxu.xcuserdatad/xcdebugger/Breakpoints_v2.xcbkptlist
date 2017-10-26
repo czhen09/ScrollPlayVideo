@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScrollPlayVideo/View/ScrollPlayVideoView.m"
-            timestampString = "530703873.126208"
+            timestampString = "530712038.209403"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "229"
-            endingLineNumber = "229"
+            startingLineNumber = "228"
+            endingLineNumber = "228"
             landmarkName = "-filterShouldPlayCellWithScrollDirection:"
             landmarkType = "7">
          </BreakpointContent>
@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScrollPlayVideo/View/ScrollPlayVideoView.m"
-            timestampString = "530703873.126256"
+            timestampString = "530712038.209826"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "216"
-            endingLineNumber = "216"
+            startingLineNumber = "215"
+            endingLineNumber = "215"
             landmarkName = "-filterShouldPlayCellWithScrollDirection:"
             landmarkType = "7">
          </BreakpointContent>
@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScrollPlayVideo/View/ScrollPlayVideoView.m"
-            timestampString = "530703873.126298"
+            timestampString = "530712038.210071"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "187"
-            endingLineNumber = "187"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
             landmarkName = "-filterShouldLightCellWithScrollDirection:"
             landmarkType = "7">
          </BreakpointContent>
@@ -138,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScrollPlayVideo/View/ScrollPlayVideoView.m"
-            timestampString = "530703873.12634"
+            timestampString = "530712038.210316"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
             landmarkName = "-filterShouldLightCellWithScrollDirection:"
             landmarkType = "7">
          </BreakpointContent>
@@ -154,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScrollPlayVideo/View/ScrollPlayVideoView.m"
-            timestampString = "530703873.12638"
+            timestampString = "530712038.210551"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "149"
-            endingLineNumber = "149"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
             landmarkName = "-filterShouldLightCellWithScrollDirection:"
             landmarkType = "7">
          </BreakpointContent>

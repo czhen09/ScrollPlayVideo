@@ -113,7 +113,6 @@ static NSString *cellIdentify = @"ScrollPlayVideoCell";
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    
     //判断滚动方向
     if (scrollView.contentOffset.y>self.lastScrollViewContentOffsetY) {
         
@@ -162,8 +161,6 @@ static NSString *cellIdentify = @"ScrollPlayVideoCell";
         self.lastOrCurrentLightIndex=self.dataArray.count-1;
         return;
     }
-    
-    
     NSArray *cellsArray = [self.tableView visibleCells];
     NSArray *newArray = nil;
     if (!isScrollDownward) {
@@ -199,20 +196,22 @@ static NSString *cellIdentify = @"ScrollPlayVideoCell";
 {
     //顶部
     if (self.tableView.contentOffset.y<=0) {
-        
+        //其他的已经暂停播放
         if (self.lastOrCurrentPlayIndex==-1) {
             [self playVideoWithShouldToPlayIndex:0];
         }else{
+            //第一个正在播放
             if (self.lastOrCurrentPlayIndex==0) {
                 return;
             }
+            //其他的没有暂停播放,先暂停其他的再播放第一个
             [self stopVideoWithShouldToStopIndex:self.lastOrCurrentPlayIndex];
             [self playVideoWithShouldToPlayIndex:0];
         }
         return;
     }
     
-    //底
+    //底部
     if (self.tableView.contentOffset.y+self.tableView.frame.size.height>=self.tableView.contentSize.height) {
         //其他的已经暂停播放
         if (self.lastOrCurrentPlayIndex==-1) {
@@ -229,7 +228,7 @@ static NSString *cellIdentify = @"ScrollPlayVideoCell";
         return;
     }
     
-    //中部
+    //中部(找出可见cell中最合适的一个进行播放)
     NSArray *cellsArray = [self.tableView visibleCells];
     NSArray *newArray = nil;
     if (!isScrollDownward) {
@@ -265,6 +264,7 @@ static NSString *cellIdentify = @"ScrollPlayVideoCell";
         CGRect rect = [cell.videoFirstImageView convertRect:cell.videoFirstImageView.bounds toView:self];
         CGFloat topSpacing = rect.origin.y;
         CGFloat bottomSpacing = self.frame.size.height-rect.origin.y-rect.size.height;
+        //当视频播放部分移除可见区域1/3的时候暂停
         if (topSpacing<-rect.size.height/3||bottomSpacing<-rect.size.height/3) {
             [cell.player stop];
             cell.player = nil;
